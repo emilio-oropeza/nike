@@ -11,11 +11,12 @@
 	var hub = function(target){
 		var componentObj = {
 			videos: {"mexico":"dCU50jzxo3Y","rio":"_ulxu14R4DQ","santiago":"VlHopSlWfMs","baires":"Nntvtyph53I"},
+			is_movil: ($(window).width() > 700),
 			methods:{
 				init:function(){
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						if($(window).width() > 700){
+						if(componentObj.is_movil){
 							console.log(">700");
 							$(this).on("mouseenter", function(){
 								var tooltip = "#tool_"+city;
@@ -30,6 +31,9 @@
 							$("#video_holder").show();
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
+					});
+					$(window).resize(function(){
+						componentObj.is_movil = $(window).width() > 700;
 					});
 					$("#close").on("click", function(){
 						$("#video_yt_cont").html("");
