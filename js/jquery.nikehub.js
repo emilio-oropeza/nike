@@ -14,7 +14,7 @@
 			methods:{
 				init:function(){
 					if(componentObj.methods.is_touch_device()){
-						$("#indepth_parallax_back").hide();
+						$(".indepth_parallax_back").remove();
 					}
 					componentObj.methods.mouse_move();
 					$(window).resize(function(){
