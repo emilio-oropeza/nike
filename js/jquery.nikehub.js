@@ -11,13 +11,25 @@
 	var hub = function(target){
 		var componentObj = {
 			videos: {"mexico":"dCU50jzxo3Y","rio":"_ulxu14R4DQ","santiago":"VlHopSlWfMs","baires":"Nntvtyph53I"},
-			is_movil: ($(window).width() > 700),
 			methods:{
 				init:function(){
+					componentObj.methods.mouse_move();
+					$(window).resize(function(){
+						componentObj.methods.mouse_move();
+					});
+					$("#close").on("click", function(){
+						$("#video_yt_cont").html("");
+						$("#video_holder").hide();
+					});
+				},
+				autoplay: function(vcode){
+					"use strict";
+				  	$("#video_yt_cont").html('<iframe width="100%" height="100%"  src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+				},
+				mouse_move: function() {
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						if(componentObj.is_movil){
-							console.log(">700");
+						if($(window).width() > 700){
 							$(this).on("mouseenter", function(){
 								var tooltip = "#tool_"+city;
 								$(tooltip).fadeIn();
@@ -32,21 +44,6 @@
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
 					});
-					$(window).resize(function(){
-						componentObj.is_movil = $(window).width() > 700;
-					});
-					$("#close").on("click", function(){
-						$("#video_yt_cont").html("");
-						$("#video_holder").hide();
-					});
-				},
-				autoplay: function(vcode){
-					"use strict";
-				  	$("#video_yt_cont").html('<iframe width="100%" height="100%"  src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
-				},
-				is_touch_device: function() {
-				  return 'ontouchstart' in window // works on most browsers 
-				      || 'onmsgesturechange' in window; // works on ie10
 				}
 			}
 		};
