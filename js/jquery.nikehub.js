@@ -13,6 +13,9 @@
 			videos: {"mexico":"dCU50jzxo3Y","rio":"_ulxu14R4DQ","santiago":"VlHopSlWfMs","baires":"Nntvtyph53I"},
 			methods:{
 				init:function(){
+					if(componentObj.methods.is_touch_device()){
+						$("#indepth_parallax_back").remove();
+					}
 					componentObj.methods.mouse_move();
 					$(window).resize(function(){
 						componentObj.methods.mouse_move();
