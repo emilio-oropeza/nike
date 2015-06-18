@@ -24,9 +24,6 @@ div#recommended-wrapper{
 	right: -50%;
 	margin: auto;
 }
-#indepth_video{
-	background-image: url("../images/Video General.jpg"); 
-}
 .indepth_parallax_back {
     height: 100%;
     position: absolute;
@@ -37,6 +34,19 @@ div#recommended-wrapper{
 .vimeo {
     height: 110%;
     width: 100%;
+}
+#indepth_video{
+	background-image: url("../images/Video General.jpg"); 
+}
+#indepth_video iframe {
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 #indepth_billboard{
 	background-image: url("../images/Billboard.jpg"); 
