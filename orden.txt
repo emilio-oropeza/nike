@@ -1,0 +1,12 @@
+1. Portada. Video (adjunto).
+2. Video general. https://www.youtube.com/watch?v=10i41fUDHn4 *960x540
+3. Billboard. Último cuadro, pero podría ir entre el video general y el mapa.
+4. Mapa. Cuando pones el cursor sobre el punto blanco sale un tooltip que dice el nombre de la ciudad y si le das click aparece el video que le corresponde*960x540 (preview = 4to cuadro del jpg) 
+Ciudad de México https://www.youtube.com/watch?v=dCU50jzxo3Y *960x540
+Buenos Aires https://www.youtube.com/watch?v=Nntvtyph53I *960x540
+Río de Janeiro https://www.youtube.com/watch?v=_ulxu14R4DQ *960x540
+Santiago https://www.youtube.com/watch?v=VlHopSlWfMs *960x540
+
+
+
+

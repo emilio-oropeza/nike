@@ -1,0 +1,140 @@
+.indepth_section{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	background-color: #000;
+}
+#indepth_cover{
+	overflow: hidden;
+}
+#indepth_cover video{
+	position: absolute;
+	left: -50%;
+	right: -50%;
+	margin: auto;
+}
+#indepth_video{
+	background-image: url("../images/Video General.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#indepth_video iframe {
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#indepth_billboard{
+	background-image: url("../images/Billboard.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#indepth_map{
+	background-image: url("../images/Mapa.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #499FC2;
+}
+#map_holder {
+    width: 980px;
+    height: 800px;
+    display: table;
+    margin: auto;
+    position: relative;
+}
+.point {
+    width: 21px;
+    height: 21px;
+    background-image: url("../images/mapa/Ubicacion.png");
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+}
+.tool {
+    position: absolute;
+    margin: auto;
+    display: none;
+}
+#point_mexico {
+    top: 126px;
+    left: 244px;
+}
+#tool_mexico {
+    width: 188px;
+    height: 47px;
+    background-image: url("../images/mapa/Mexico.png");
+    top: 113px;
+    left: 0px;
+}
+#point_rio {
+    bottom: 269px;
+    right: 235px;
+}
+#tool_rio {
+    height: 47px;
+    background-image: url("../images/mapa/Rio.png");
+    right: 50px;
+    width: 163px;
+    bottom: 256px;
+}
+#point_santiago {
+    bottom: 173px;
+    right: 471px;
+}
+#tool_santiago {
+    height: 47px;
+    background-image: url("../images/mapa/Santiago.png");
+    right: 520px;
+    width: 120px;
+    bottom: 161px;
+}
+#point_baires {
+    bottom: 164px;
+    right: 383px;
+}
+#tool_baires {
+    height: 47px;
+    background-image: url("../images/mapa/BAires.png");
+    right: 178px;
+    width: 153px;
+    bottom: 152px;
+}
+#video_holder {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+#video_content{
+	width: 1000px;
+	height: 100%;
+	position: relative;
+	display: table;
+	margin: auto;
+}
+#close {
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    margin: auto;
+    background-image: url("../images/mapa/X.png");
+    right: 0;
+    top: 105px;
+    cursor: pointer;
+}
+#video_yt_cont {
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
