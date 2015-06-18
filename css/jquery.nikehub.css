@@ -240,7 +240,35 @@ div#recommended-wrapper{
 	#point_baires {
 	    bottom: 67px;
 		right: 112px;
-	}	
+	}
+	#tool_mexico {
+		width: 100px;
+		height: 25px;
+		background-size: 115px auto;
+	    top: 70px;
+		left: 5px;
+	}
+	#tool_rio {
+	    bottom: 135px;
+		right: 0px;
+		width: 100px;
+		background-size: 115px auto;
+		height: 25px;
+	}
+	#tool_santiago {
+	    right: 125px;
+		bottom: 30px;
+		width: 70px;
+		background-size: 90px auto;
+		height: 25px;
+	}
+	#tool_baires {
+	    bottom: 62px;
+		right: 12px;
+		width: 77px;
+		background-size: 90px auto;
+		height: 25px;
+	}
 	#video_content {
 	    width: 100%;
 	}
@@ -273,6 +301,10 @@ div#recommended-wrapper{
 	#point_mexico {
 	    left: 65px;
 		top: 40px;
+	}
+	#tool_mexico {
+	    top: 70px;
+		left: 5px;
 	}
 	#video_content {
 	    width: 100%;

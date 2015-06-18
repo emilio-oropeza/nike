@@ -29,7 +29,7 @@
 				mouse_move: function() {
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						if($(window).width() > 750){
+						if(!componentObj.methods.is_touch_device()){
 							$(this).on("mouseenter", function(){
 								var tooltip = "#tool_"+city;
 								$(tooltip).fadeIn();
@@ -44,6 +44,10 @@
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
 					});
+				},
+				is_touch_device: function() {
+				  return 'ontouchstart' in window // works on most browsers 
+				      || 'onmsgesturechange' in window; // works on ie10
 				}
 			}
 		};
