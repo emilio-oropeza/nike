@@ -31,12 +31,12 @@
 							var tooltip = "#tool_"+city;
 							$(tooltip).fadeOut();
 						});
-						$(this).on("click", function(){
+						$(this).on("mousedown click", function(){
 							$("#video_holder").show();
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
 					});
-					$("#close").on("mousedown click", function(){
+					$("#close").on("click", function(){
 						$("#video_yt_cont").html("");
 						$("#video_holder").hide();
 					});
