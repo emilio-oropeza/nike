@@ -12,7 +12,15 @@
 		var componentObj = {
 			videos: {"mexico":"dCU50jzxo3Y","rio":"_ulxu14R4DQ","santiago":"VlHopSlWfMs","baires":"Nntvtyph53I"},
 			methods:{
-				init:function(){					
+				init:function(){
+
+					if(componentObj.is_touch_device()){
+						alert("es touch");
+					}else{
+						alert("no es touch");
+					}
+
+
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
 						$(this).on("mouseenter", function(){
@@ -28,7 +36,7 @@
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
 					});
-					$("#close").on("click", function(){
+					$("#close").on("mousedown click", function(){
 						$("#video_yt_cont").html("");
 						$("#video_holder").hide();
 					});
@@ -36,6 +44,10 @@
 				autoplay: function(vcode){
 					"use strict";
 				  	$("#video_yt_cont").html('<iframe width="100%" height="100%"  src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>');
+				},
+				is_touch_device: function() {
+				  return 'ontouchstart' in window // works on most browsers 
+				      || 'onmsgesturechange' in window; // works on ie10
 				}
 			}
 		};
