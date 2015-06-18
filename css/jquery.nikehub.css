@@ -35,8 +35,8 @@ div#recommended-wrapper{
     margin: auto;
 }
 .vimeo {
-    height: 900px;
-	width: 100%;
+    height: 110%;
+    width: 100%;
 }
 #indepth_billboard{
 	background-image: url("../images/Billboard.jpg"); 
@@ -150,9 +150,6 @@ div#recommended-wrapper{
 	    height: 600px;
 	    background-size: auto 600px;
 	}
-	.vimeo {
-	    height: 700px;
-	}
 	#indepth_video iframe {
 	    width: 655px;
 	    height: 370px;
@@ -217,9 +214,6 @@ div#recommended-wrapper{
 	.indepth_section {
 	    height: 400px;
 	    background-size: auto 400px;
-	}
-	.vimeo {
-	    height: 500px;
 	}
 	#indepth_video iframe {
 	    width: 90%;
@@ -298,9 +292,6 @@ div#recommended-wrapper{
 	.indepth_section {
 	    height: 260px;
 		background-size: auto 260px;
-	}
-	.vimeo {
-	    height: 600px;
 	}
 	#indepth_map{
 		height: 290px;
