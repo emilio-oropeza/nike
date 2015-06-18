@@ -13,10 +13,10 @@
 			videos: {"mexico":"dCU50jzxo3Y","rio":"_ulxu14R4DQ","santiago":"VlHopSlWfMs","baires":"Nntvtyph53I"},
 			methods:{
 				init:function(){
-
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						if(!componentObj.methods.is_touch_device){
+						if($(window).width() > 700){
+							console.log(">700");
 							$(this).on("mouseenter", function(){
 								var tooltip = "#tool_"+city;
 								$(tooltip).fadeIn();
@@ -25,7 +25,7 @@
 								var tooltip = "#tool_"+city;
 								$(tooltip).fadeOut();
 							});
-						}						
+						}
 						$(this).on("click", function(){
 							$("#video_holder").show();
 							componentObj.methods.autoplay(componentObj.videos[city]);
