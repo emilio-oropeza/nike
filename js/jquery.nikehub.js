@@ -14,13 +14,6 @@
 			methods:{
 				init:function(){
 
-					if(componentObj.methods.is_touch_device()){
-						alert("es touch");
-					}else{
-						alert("no es touch");
-					}
-
-
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
 						$(this).on("mouseenter", function(){
@@ -31,7 +24,7 @@
 							var tooltip = "#tool_"+city;
 							$(tooltip).fadeOut();
 						});
-						$(this).on("mousedown click", function(){
+						$(this).on("click", function(){
 							$("#video_holder").show();
 							componentObj.methods.autoplay(componentObj.videos[city]);
 						});
