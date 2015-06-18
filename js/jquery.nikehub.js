@@ -16,14 +16,16 @@
 
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						$(this).on("mouseenter", function(){
-							var tooltip = "#tool_"+city;
-							$(tooltip).fadeIn();
-						});
-						$(this).on("mouseleave", function(){
-							var tooltip = "#tool_"+city;
-							$(tooltip).fadeOut();
-						});
+						if(!componentObj.methods.is_touch_device){
+							$(this).on("mouseenter", function(){
+								var tooltip = "#tool_"+city;
+								$(tooltip).fadeIn();
+							});
+							$(this).on("mouseleave", function(){
+								var tooltip = "#tool_"+city;
+								$(tooltip).fadeOut();
+							});
+						}						
 						$(this).on("click", function(){
 							$("#video_holder").show();
 							componentObj.methods.autoplay(componentObj.videos[city]);
