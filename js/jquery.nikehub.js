@@ -14,7 +14,7 @@
 			methods:{
 				init:function(){
 
-					if(componentObj.is_touch_device()){
+					if(componentObj.method.is_touch_device()){
 						alert("es touch");
 					}else{
 						alert("no es touch");
