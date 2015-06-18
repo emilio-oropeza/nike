@@ -206,6 +206,9 @@ div#recommended-wrapper{
 	}
 }
 @media(max-width: 750px){
+	#indepth_cover{
+		background-attachment: scroll;
+	}	
 	.indepth_section {
 	    height: 400px;
 	    background-size: auto 400px;

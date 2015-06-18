@@ -29,7 +29,7 @@
 				mouse_move: function() {
 					$(".point").each(function(){
 						var city = $(this).attr("tooltip");
-						if($(window).width() > 700){
+						if($(window).width() > 750){
 							$(this).on("mouseenter", function(){
 								var tooltip = "#tool_"+city;
 								$(tooltip).fadeIn();
