@@ -1,16 +1,7 @@
 div#recommended-wrapper{
 	display: none;
 }
-.vimeo{
-	display:block;
-	width:638px;
-	height:358px; 
-	margin:0 auto;
-	margin-top: -50px;
-	margin-left: -75px;
-}
 
-.vimeoFrame {width:638px; height:358px; overflow:hidden; margin:0 auto;}
 .indepth_section{
 	width: 100%;
 	height: 800px;
